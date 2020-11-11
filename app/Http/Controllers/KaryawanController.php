@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+// use Tmkaryawan;
+// use Trpekerjaan;
+// use Trpekerjaan;
+
+
 class KaryawanController extends Controller
 {
     /**
@@ -13,7 +19,10 @@ class KaryawanController extends Controller
      */
     public function index()
     {
-        //
+        $datakaraywan = '';
+        return view('karyawan', [
+            'data' => $datakaryawan
+        ]);
     }
 
     /**
@@ -23,7 +32,7 @@ class KaryawanController extends Controller
      */
     public function create(Request $request)
     {
-        $data = new Tmkaryawan;
+        $data = new Tmkaryawan();
         $data->nama = $request->nama;
         $data->no_ktp = $request->no_ktp;
         $data->ttl = $request->ttl;
@@ -40,7 +49,7 @@ class KaryawanController extends Controller
 
         $data->save();
 
-        $data_1 = Trpekerjaan;
+        $data_1 = new Trpekerjaan();
         $data_1->id_pendaftar = $request->id_pendaftar;
         $data_1->nmpekerjaan = $request->nmpekerjaan;
         $data_1->posisiterakhir = $request->posisiterakhir;
@@ -51,24 +60,22 @@ class KaryawanController extends Controller
         $data->save();
 
 
-        $rfdata = Trpekerjaan;
+        $rfdata = new Trpekerjaan;
         $rfdata->id_pendaftar = $request->id_pendaftar;
         $rfdata->nmpekerjaan = $request->nmpekerjaan;
         $rfdata->posisiterakhir = $request->posisiterakhir;
         $rfdata->pendapatantrakhir = $request->pendapatantrakhir;
         $rfdata->tahun = $request->tahun;
- 
+
         $data->save();
 
 
-        $rfdata = Trpekerjaan;
+        $rfdata = new Trpekerjaan;
         $rfdata->id_pendaftar = $request->id_pendaftar;
         $rfdata->nmpekerjaan = $request->nmpekerjaan;
         $rfdata->posisiterakhir = $request->posisiterakhir;
         $rfdata->pendapatantrakhir = $request->pendapatantrakhir;
         $rfdata->tahun = $request->tahun;
-
-
         $data->save();
 
         response()->json([

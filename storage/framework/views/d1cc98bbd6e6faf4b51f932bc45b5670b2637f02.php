@@ -165,36 +165,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <?php
-                        $level = Properti_app::getlevel();
-                        ?>
-                         <?php if($level != 3): ?>
-                        <li class="nav-item dropdown hidden-caret">
-                            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-bell"></i>
-                                <span class="notification">Loading ...</span>
-                            </a>
-                            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
-                                <li>
-                                    <div class="dropdown-title">Opd yang belum input realisasi pendapatan pada
-                                        <?php echo e(Properti_app::tgl_indo(date('Y-m-d'))); ?></div>
-                                </li>
-                                <li>
-                                    <div class="notif-scroll scrollbar-outer">
-                                        <div class="notif-center">
-                                            <div class="notif_opd"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="see-all" href="<?php echo e(route('pendapatan.index')); ?>">Lihat Semua Pendapatan .<i
-                                            class="fa fa-angle-right"></i> </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <?php endif; ?>
-
+                      
                         <li class="nav-item dropdown hidden-caret">
                             <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <i class="fas fa-layer-group"></i>
@@ -246,7 +217,7 @@
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
                                 aria-expanded="false">
                                 <div class="avatar-sm">
-                                    <img src="<?php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) ?>"
+                                    <img src=""
                                         alt="..." class="avatar-img rounded-circle"
                                         onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
                                 </div>
@@ -256,7 +227,7 @@
                                     <li>
                                         <div class="user-box">
                                             <div class="avatar-lg"><img
-                                                    src="<?php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) ?>"
+                                                    src=""
                                                     alt="image profile" class="avatar-img rounded"
                                                     onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
                                             </div>
@@ -298,18 +269,13 @@
                 <div class="sidebar-content">
                     <div class="user">
                         <div class="avatar-sm float-left mr-2">
-                            <img src="<?php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) ?>"
+                            <img src=""
                                 alt="..." class="avatar-img rounded-circle"
                                 onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-                                <span>
-                                    <h4><?php echo e(Auth::user()->realname); ?></h4>
-                                    <span class="user-level"><?php echo e(Properti_app::getsatker()); ?></span>
-                                    <span class="caret"></span>
-                                </span>
-                            </a>
+                             </a>
                             <div class="clearfix"></div>
                             <div class="collapse in" id="collapseExample">
                                 <ul class="nav">
@@ -344,8 +310,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <?php echo Menu_app::list_menu() ?>
-                    </ul>
+                     </ul>
                 </div>
             </div>
         </div>

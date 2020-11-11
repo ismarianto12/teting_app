@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Symfony\Component\HttpFoundation\Request;
-
+ 
 class LoginController extends Controller
 {
     /*
@@ -48,8 +48,7 @@ class LoginController extends Controller
     {
         $this->validate($request, [
             $this->username() => 'required|string',
-            'password' => 'required|string',
-            'year' => 'required|string'
+            'password' => 'required|string' 
         ]);
     }
 

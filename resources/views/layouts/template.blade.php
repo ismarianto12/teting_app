@@ -165,36 +165,7 @@
                                 </li>
                             </ul>
                         </li>
-                        @php
-                        $level = Properti_app::getlevel();
-                        @endphp
-                         @if ($level != 3)
-                        <li class="nav-item dropdown hidden-caret">
-                            <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-bell"></i>
-                                <span class="notification">Loading ...</span>
-                            </a>
-                            <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
-                                <li>
-                                    <div class="dropdown-title">Opd yang belum input realisasi pendapatan pada
-                                        {{ Properti_app::tgl_indo(date('Y-m-d')) }}</div>
-                                </li>
-                                <li>
-                                    <div class="notif-scroll scrollbar-outer">
-                                        <div class="notif-center">
-                                            <div class="notif_opd"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="see-all" href="{{ route('pendapatan.index') }}">Lihat Semua Pendapatan .<i
-                                            class="fa fa-angle-right"></i> </a>
-                                </li>
-                            </ul>
-                        </li>
-                        @endif
-
+                      
                         <li class="nav-item dropdown hidden-caret">
                             <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
                                 <i class="fas fa-layer-group"></i>
@@ -246,7 +217,7 @@
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
                                 aria-expanded="false">
                                 <div class="avatar-sm">
-                                    <img src="@php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) @endphp"
+                                    <img src=""
                                         alt="..." class="avatar-img rounded-circle"
                                         onerror="this.src='{{ asset('assets/template/img/no-image.png') }}'">
                                 </div>
@@ -256,7 +227,7 @@
                                     <li>
                                         <div class="user-box">
                                             <div class="avatar-lg"><img
-                                                    src="@php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) @endphp"
+                                                    src=""
                                                     alt="image profile" class="avatar-img rounded"
                                                     onerror="this.src='{{ asset('assets/template/img/no-image.png') }}'">
                                             </div>
@@ -298,18 +269,13 @@
                 <div class="sidebar-content">
                     <div class="user">
                         <div class="avatar-sm float-left mr-2">
-                            <img src="@php echo asset('./file/photo_user/'.Properti_app::propuser('photo')) @endphp"
+                            <img src=""
                                 alt="..." class="avatar-img rounded-circle"
                                 onerror="this.src='{{ asset('assets/template/img/no-image.png') }}'">
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-                                <span>
-                                    <h4>{{ Auth::user()->realname }}</h4>
-                                    <span class="user-level">{{ Properti_app::getsatker() }}</span>
-                                    <span class="caret"></span>
-                                </span>
-                            </a>
+                             </a>
                             <div class="clearfix"></div>
                             <div class="collapse in" id="collapseExample">
                                 <ul class="nav">
@@ -344,8 +310,7 @@
                                 </ul>
                             </div>
                         </li>
-                        @php echo Menu_app::list_menu() @endphp
-                    </ul>
+                     </ul>
                 </div>
             </div>
         </div>
@@ -484,25 +449,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(function(){
-        $('.notif_opd').html('<div class="alert alert-danger">Loading ..</div>');
-            url = '{{ route('aplikasi.opdinput') }}';
-            $.get(url,function(data){
-            hasil = '';  
-            $.each(data, function(index, value){
-                hasil += '<a href="#" onfocus="detail_data('+value.opd_kode+')"><div class="notif-img">'+value.image+'</div> <div class="notif-content"><span class="block">'+value.opd_kode+'</span><span class="time">'+value.opn_nm+'</span></div></a>';
-             });
-             $('.notif_opd').html('<li>'+hasil+'</li>'); 
-           },'JSON');     
-          //
-           url = '{{ route('aplikasi.opdinput') }}?total=1';
-          $.get(url,function(data){
-            $('.notification').html(data);
-         },'JSON'); 
-      }); 
-    </script>
+ 
     <script>
         $(function(){
             $('.modal_opd').on('click',function(e){
