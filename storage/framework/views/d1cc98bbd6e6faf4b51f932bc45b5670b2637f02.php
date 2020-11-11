@@ -4,11 +4,11 @@
 <head>
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>BADAN PENDAPATAN DAERAH - PELAPORAN PENDAPATAPAN <?php echo e(Properti_app::getTahun()); ?></title>
+    <title>SELAMAT DATANG KEMBALI</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="<?php echo e(asset('assets\template\img/icon.ico')); ?>" />
+    <link rel="icon" href="<?php echo e(asset('public/assets\template\img/icon.ico')); ?>" />
     <!-- Fonts and icons -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/webfont/webfont.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/webfont/webfont.min.js"></script>
     <script>
         WebFont.load({
             google: {
@@ -18,7 +18,7 @@
                 "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular",
                     "Font Awesome 5 Brands", "simple-line-icons"
                 ],
-                urls: ['<?php echo e(asset('/assets/template/')); ?>/css/fonts.min.css']
+                urls: ['<?php echo e(asset('public//assets/template/')); ?>/css/fonts.min.css']
             },
             active: function () {
                 sessionStorage.fonts = true;
@@ -29,13 +29,13 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="<?php echo e(asset('/assets/template/')); ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo e(asset('/assets/template/')); ?>/css/atlantis.css">
+    <link rel="stylesheet" href="<?php echo e(asset('public//assets/template/')); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('public//assets/template/')); ?>/css/atlantis.css">
 
-    <link rel="stylesheet" href="<?php echo e(asset('/assets/template/')); ?>/css/demo.css">
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/sweetalert2@9.js"></script>
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/core/jquery.3.2.1.min.js"></script>
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js">
+    <link rel="stylesheet" href="<?php echo e(asset('public//assets/template/')); ?>/css/demo.css">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/sweetalert2@9.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/core/jquery.3.2.1.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js">
     </script>
 
 
@@ -43,9 +43,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('/assets/template/')); ?>/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('public//assets/template/')); ?>/css/tooltipster.bundle.min.css">
     <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('/assets/template/')); ?>/css/tooltipster-sideTip-borderless.min.css">
+        href="<?php echo e(asset('public//assets/template/')); ?>/css/tooltipster-sideTip-borderless.min.css">
 
 </head>
 
@@ -56,7 +56,7 @@
             <div class="logo-header" data-background-color="blue">
 
                 <a href="" class="logo">
-                    <img src="<?php echo e(asset('assets/template/img/logo.png')); ?>" alt="navbar brand" class="navbar-brand"
+                    <img src="<?php echo e(asset('public/assets/template/img/logo.png')); ?>" alt="navbar brand" class="navbar-brand"
                         style="
                         height: 38px;
                     ">
@@ -105,9 +105,9 @@
                                         <div class="notif-center">
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="<?php echo e(asset('/assets/template/')); ?>/img/jm_denis.jpg"
+                                                    <img src="<?php echo e(asset('public//assets/template/')); ?>/img/jm_denis.jpg"
                                                         alt="Img Profile"
-                                                        onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
+                                                        onerror="this.src='<?php echo e(asset('public/assets/template/img/no-image.png')); ?>'">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="subject">Jimmy Denis</span>
@@ -119,7 +119,7 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="<?php echo e(asset('/assets/template/')); ?>/img/chadengle.jpg"
+                                                    <img src="<?php echo e(asset('public//assets/template/')); ?>/img/chadengle.jpg"
                                                         alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -132,7 +132,7 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="<?php echo e(asset('/assets/template/')); ?>/img/mlane.jpg"
+                                                    <img src="<?php echo e(asset('public//assets/template/')); ?>/img/mlane.jpg"
                                                         alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -145,7 +145,7 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="<?php echo e(asset('/assets/template/')); ?>/img/talha.jpg"
+                                                    <img src="<?php echo e(asset('public//assets/template/')); ?>/img/talha.jpg"
                                                         alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
@@ -219,7 +219,7 @@
                                 <div class="avatar-sm">
                                     <img src=""
                                         alt="..." class="avatar-img rounded-circle"
-                                        onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
+                                        onerror="this.src='<?php echo e(asset('public/assets/template/img/no-image.png')); ?>'">
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -229,7 +229,7 @@
                                             <div class="avatar-lg"><img
                                                     src=""
                                                     alt="image profile" class="avatar-img rounded"
-                                                    onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
+                                                    onerror="this.src='<?php echo e(asset('public/assets/template/img/no-image.png')); ?>'">
                                             </div>
                                             <div class="u-text">
                                                 <h4><?php echo e(Auth::user()->realname); ?></h4>
@@ -271,7 +271,7 @@
                         <div class="avatar-sm float-left mr-2">
                             <img src=""
                                 alt="..." class="avatar-img rounded-circle"
-                                onerror="this.src='<?php echo e(asset('assets/template/img/no-image.png')); ?>'">
+                                onerror="this.src='<?php echo e(asset('public/assets/template/img/no-image.png')); ?>'">
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -351,81 +351,81 @@
     </div>
     <!--   Core JS Files   -->
 
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous"></script>
-    <script src="<?php echo e(asset('assets/template')); ?>/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
-    <script src="<?php echo e(asset('assets/template/js/aplikasi.js')); ?>"></script>
+    <script src="<?php echo e(asset('public/assets/template')); ?>/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="<?php echo e(asset('public/assets/template/js/aplikasi.js')); ?>"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js">
     </script>
 
     <!-- Moment JS -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/moment/moment.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/moment/moment.min.js"></script>
 
     <!-- Chart JS -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/chart.js/chart.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/chart.js/chart.min.js"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jquery.sparkline/jquery.sparkline.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jquery.sparkline/jquery.sparkline.min.js">
     </script>
 
     <!-- Chart Circle -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/chart-circle/circles.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/chart-circle/circles.min.js">
     </script>
 
 
     <!-- Bootstrap Notify -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/bootstrap-notify/bootstrap-notify.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/bootstrap-notify/bootstrap-notify.min.js">
     </script>
 
     <!-- Bootstrap Toggle -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js">
     </script>
 
     <!-- jQuery Vector Maps -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jqvmap/maps/jquery.vmap.world.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jqvmap/maps/jquery.vmap.world.js">
     </script>
 
 
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/core/bootstrap.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/core/bootstrap.min.js"></script>
 
     <!-- Fullcalendar -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/fullcalendar/fullcalendar.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/fullcalendar/fullcalendar.min.js">
     </script>
 
     <!-- DateTimePicker -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/datepicker/bootstrap-datetimepicker.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/datepicker/bootstrap-datetimepicker.min.js">
     </script>
 
     <!-- jQuery Validation -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/jquery.validate/jquery.validate.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/jquery.validate/jquery.validate.min.js">
     </script>
 
     <!-- Summernote -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/summernote/summernote-bs4.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/summernote/summernote-bs4.min.js">
     </script>
 
     <!-- Select2 -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/select2/select2.full.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/select2/select2.full.min.js">
     </script>
 
     <!-- Sweet Alert -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/sweetalert/sweetalert.min.js">
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/sweetalert/sweetalert.min.js">
     </script>
 
     <!-- Atlantis JS -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/atlantis.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/atlantis.min.js"></script>
     <!-- Moment JS -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/moment/moment.min.js"></script>
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/tooltipster.bundle.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/moment/moment.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/tooltipster.bundle.min.js"></script>
 
     <!-- Chart JS -->
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/plugin/chart.js/chart.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/plugin/chart.js/chart.min.js"></script>
 
     <?php echo $__env->yieldContent('script'); ?>
 
@@ -451,25 +451,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(function(){
-        $('.notif_opd').html('<div class="alert alert-danger">Loading ..</div>');
-            url = '<?php echo e(route('aplikasi.opdinput')); ?>';
-            $.get(url,function(data){
-            hasil = '';  
-            $.each(data, function(index, value){
-                hasil += '<a href="#" onfocus="detail_data('+value.opd_kode+')"><div class="notif-img">'+value.image+'</div> <div class="notif-content"><span class="block">'+value.opd_kode+'</span><span class="time">'+value.opn_nm+'</span></div></a>';
-             });
-             $('.notif_opd').html('<li>'+hasil+'</li>'); 
-           },'JSON');     
-          //
-           url = '<?php echo e(route('aplikasi.opdinput')); ?>?total=1';
-          $.get(url,function(data){
-            $('.notification').html(data);
-         },'JSON'); 
-      }); 
-    </script>
+ 
     <script>
         $(function(){
             $('.modal_opd').on('click',function(e){
@@ -499,7 +481,7 @@
          $('.nav-item dropdown hidden-caret submenu').attr('open');
      }
     </script>
-    <script src="<?php echo e(asset('/assets/template/')); ?>/js/core/popper.min.js"></script>
+    <script src="<?php echo e(asset('public//assets/template/')); ?>/js/core/popper.min.js"></script>
 
 
 
