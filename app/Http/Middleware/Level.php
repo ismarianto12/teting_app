@@ -15,16 +15,15 @@ class Level
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, \Closure $next, $permission)
+    public function handle($request, \Closure $next)
     { 
-        $levelAuth = Properti_app::getlevel();  
+        $level = Auth::user()->username;  
 
-        $level = explode('|', $permission);
-        // dd($levelAuth);
-        if (in_array($levelAuth, $level)) {
+         // dd($levelAuth);
+        if ($level) {
             return $next($request);
         } else {
-            return redirect(route('restrict'));
+            return redirect(route('login'));
         }
     }
 }
