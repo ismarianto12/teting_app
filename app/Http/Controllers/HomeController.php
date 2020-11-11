@@ -13,7 +13,7 @@ class HomeController extends Controller
     function __construct()
     {
         $this->view = 'dashboard.';
-        //  $this->middleware('level:admin|satker');
+        $this->middleware('auth');
     }
 
     function index(Request $request)

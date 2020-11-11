@@ -33,6 +33,9 @@
             class="login-aside w-50 d-flex flex-column align-items-center justify-content-center text-center bg-secondary-gradient">
             <h1 class="title fw-bold text-white mb-3">HRD</h1>
             <p class="subtitle text-white op-7">SISTEM INFORMASI KARYAWN </p>
+            @if (Session::has('message'))
+            <li>{{ session('message') }}</li>
+            @endif
         </div>
         <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
             <div class="container container-login container-transparent animated fadeIn">
@@ -69,7 +72,7 @@
                                 class="btn btn-secondary col-md-5 float-right mt-3 mt-sm-0 fw-bold">Login</a>
                         </div>
                         <div class="login-account">
-                            <span class="msg"><a href="/register">Register ?</a></span>
+                            <span class="msg"><a href="{{route('register')}}">Register ?</a></span>
                         </div>
                     </div>
                 </form>

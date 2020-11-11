@@ -307,6 +307,16 @@
                                             <span class="sub-item">Home</span>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="<?php echo e(Url('/')); ?>">
+                                            <span class="sub-item">Data Pendaftar</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo e(Url('/')); ?>">
+                                            <span class="sub-item">Home</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
